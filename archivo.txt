@@ -1,0 +1,15 @@
+circulo rojo 2,5 
+cubo naranja 6
+cilindro amarillo 2,5; 3
+rectangulo amarillo 6; 3
+circulo rojo 3
+circulo azul 3,2
+rectangulo rojo 1,4; 2
+cilindro azul 3; 4
+circulo amarillo 2,5
+cilindro rojo 2,5; 3
+rectangulo azul 3; 5
+triangulo rojo 3; 1,5
+circulo amarillo 3,2
+cilindro violeta 4;1
+

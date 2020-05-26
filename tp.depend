@@ -1,0 +1,412 @@
+# depslib dependency file v1.0
+1588641853 source:c:\users\camil\desktop\tp\main.cpp
+	<iostream>
+	<stdlib.h>
+	<string>
+	"Figura.h"
+	"Listas.h"
+
+1588641970 source:c:\users\camil\desktop\tp\listas.cpp
+	"Figura.h"
+	"Listas.h"
+	"ColoresLista.h"
+	<iostream>
+	<string>
+	<fstream>
+	<stdlib.h>
+
+1588272478 c:\users\camil\desktop\tp\figura.h
+	<string>
+
+1588642208 c:\users\camil\desktop\tp\listas.h
+	"Figura.h"
+	"ColoresLista.h"
+	<string>
+
+1588629337 source:c:\users\camil\desktop\tp\figura.cpp
+	"Figura.h"
+	<math.h>
+	<iostream>
+	<string>
+	<fstream>
+	<stdlib.h>
+
+1588538115 source:c:\users\camil\desktop\tp\color.cpp
+	"Color.h"
+
+1588538045 c:\users\camil\desktop\tp\color.h
+	<string>
+	<iostream>
+
+1588681521 source:c:\users\camil\desktop\tp\coloreslista.cpp
+	"ColoresLista.h"
+
+1588681521 c:\users\camil\desktop\tp\coloreslista.h
+	"Color.h"
+
+1589124136 source:c:\users\ezequielde la fuente\desktop\eze\code\c++\tp\color.cpp
+	"Color.h"
+	<string>
+
+1588538045 c:\users\ezequielde la fuente\desktop\eze\code\c++\tp\color.h
+	<string>
+	<iostream>
+
+1589124181 source:c:\users\ezequielde la fuente\desktop\eze\code\c++\tp\coloreslista.cpp
+	"ColoresLista.h"
+	"Color.h"
+	<string>
+
+1589124168 c:\users\ezequielde la fuente\desktop\eze\code\c++\tp\coloreslista.h
+	"Color.h"
+	<string>
+
+1589124514 source:c:\users\ezequielde la fuente\desktop\eze\code\c++\tp\figura.cpp
+	"Figura.h"
+	<math.h>
+	<iostream>
+	<string>
+	<fstream>
+
+1588272478 c:\users\ezequielde la fuente\desktop\eze\code\c++\tp\figura.h
+	<string>
+
+1589133356 source:c:\users\ezequielde la fuente\desktop\eze\code\c++\tp\main.cpp
+	<iostream>
+	<stdlib.h>
+	<string>
+	"Figura.h"
+	"Listas.h"
+
+1589133473 c:\users\ezequielde la fuente\desktop\eze\code\c++\tp\listas.h
+	"Figura.h"
+	"Color.h"
+	"ColoresLista.h"
+	<string>
+
+1589133261 source:c:\users\ezequielde la fuente\desktop\eze\code\c++\tp\listas.cpp
+	"Figura.h"
+	"Color.h"
+	"Listas.h"
+	"ColoresLista.h"
+	<iostream>
+	<string>
+	<fstream>
+	<stdlib.h>
+
+1589124136 source:c:\users\ezequielde la fuente\desktop\eze\code\c++\tp con insertarporfigura\color.cpp
+	"Color.h"
+	<string>
+
+1588538045 c:\users\ezequielde la fuente\desktop\eze\code\c++\tp con insertarporfigura\color.h
+	<string>
+	<iostream>
+
+1589124181 source:c:\users\ezequielde la fuente\desktop\eze\code\c++\tp con insertarporfigura\coloreslista.cpp
+	"ColoresLista.h"
+	"Color.h"
+	<string>
+
+1589124168 c:\users\ezequielde la fuente\desktop\eze\code\c++\tp con insertarporfigura\coloreslista.h
+	"Color.h"
+	<string>
+
+1589124514 source:c:\users\ezequielde la fuente\desktop\eze\code\c++\tp con insertarporfigura\figura.cpp
+	"Figura.h"
+	<math.h>
+	<iostream>
+	<string>
+	<fstream>
+
+1588272478 c:\users\ezequielde la fuente\desktop\eze\code\c++\tp con insertarporfigura\figura.h
+	<string>
+
+1589311715 source:c:\users\ezequielde la fuente\desktop\eze\code\c++\tp con insertarporfigura\listas.cpp
+	"Figura.h"
+	"Color.h"
+	"Listas.h"
+	"ColoresLista.h"
+	<iostream>
+	<string>
+	<fstream>
+	<stdlib.h>
+
+1589311689 c:\users\ezequielde la fuente\desktop\eze\code\c++\tp con insertarporfigura\listas.h
+	"Figura.h"
+	"Color.h"
+	"ColoresLista.h"
+	<string>
+
+1589314938 source:c:\users\ezequielde la fuente\desktop\eze\code\c++\tp con insertarporfigura\main.cpp
+	<iostream>
+	<stdlib.h>
+	<string>
+	"Figura.h"
+	"Listas.h"
+
+1589656873 source:c:\users\nicol\desktop\tp chicos\tp\color.cpp
+	"Color.h"
+	<string>
+
+1589656872 c:\users\nicol\desktop\tp chicos\tp\color.h
+	<string>
+	<iostream>
+
+1589656873 source:c:\users\nicol\desktop\tp chicos\tp\coloreslista.cpp
+	"ColoresLista.h"
+	"Color.h"
+	<string>
+
+1589656873 c:\users\nicol\desktop\tp chicos\tp\coloreslista.h
+	"Color.h"
+	<string>
+
+1589675014 source:c:\users\nicol\desktop\tp chicos\tp\figura.cpp
+	"Figura.h"
+	<math.h>
+	<iostream>
+	<string>
+	<fstream>
+
+1589656873 c:\users\nicol\desktop\tp chicos\tp\figura.h
+	<string>
+
+1589676003 source:c:\users\nicol\desktop\tp chicos\tp\main.cpp
+	<iostream>
+	<stdlib.h>
+	<string>
+	"Figura.h"
+	"Listas.h"
+
+1589733430 c:\users\nicol\desktop\tp chicos\tp\listas.h
+	"Figura.h"
+	"Color.h"
+	"ColoresLista.h"
+	<string>
+
+1589737549 source:c:\users\nicol\desktop\tp chicos\tp\listas.cpp
+	"Figura.h"
+	"Color.h"
+	"Listas.h"
+	"ColoresLista.h"
+	<iostream>
+	<string>
+	<fstream>
+	<stdlib.h>
+
+1590280549 source:c:\users\camil\downloads\tp 22-5\tp\figura.cpp
+	"Figura.h"
+	<math.h>
+
+1590280590 c:\users\camil\downloads\tp 22-5\tp\figura.h
+	<string>
+	<iostream>
+
+1590198647 source:c:\users\camil\downloads\tp 22-5\tp\color.cpp
+	"Color.h"
+	<string>
+
+1590198279 c:\users\camil\downloads\tp 22-5\tp\color.h
+	<string>
+	<iostream>
+
+1590200145 source:c:\users\camil\downloads\tp 22-5\tp\coloreslista.cpp
+	"ColoresLista.h"
+	"Color.h"
+	<string>
+
+1590200213 c:\users\camil\downloads\tp 22-5\tp\coloreslista.h
+	"Color.h"
+	<string>
+
+1590289515 source:c:\users\camil\downloads\tp 22-5\tp\listas.cpp
+	"Figura.h"
+	"Color.h"
+	"Listas.h"
+	"ColoresLista.h"
+	<iostream>
+	<string>
+	<stdlib.h>
+
+1590289517 c:\users\camil\downloads\tp 22-5\tp\listas.h
+	"Figura.h"
+	"Color.h"
+	"ColoresLista.h"
+	<string>
+
+1590290797 source:c:\users\camil\downloads\tp 22-5\tp\main.cpp
+	<iostream>
+	<stdlib.h>
+	<string>
+	"Figura.h"
+	"Listas.h"
+	"ListasFunciones.h"
+
+1590289513 c:\users\camil\downloads\tp 22-5\tp\listasfunciones.h
+	"Listas.h"
+
+1590283612 source:c:\users\camil\downloads\tp 22-5\tp\listasfunciones.cpp
+	<fstream>
+	<stdlib.h>
+	"ListasFunciones.h"
+
+1590198647 source:c:\users\nicol\desktop\tp 22-5\tp\color.cpp
+	"Color.h"
+	<string>
+
+1590198279 c:\users\nicol\desktop\tp 22-5\tp\color.h
+	<string>
+	<iostream>
+
+1590200145 source:c:\users\nicol\desktop\tp 22-5\tp\coloreslista.cpp
+	"ColoresLista.h"
+	"Color.h"
+	<string>
+
+1590200213 c:\users\nicol\desktop\tp 22-5\tp\coloreslista.h
+	"Color.h"
+	<string>
+
+1590280549 source:c:\users\nicol\desktop\tp 22-5\tp\figura.cpp
+	"Figura.h"
+	<math.h>
+
+1590280590 c:\users\nicol\desktop\tp 22-5\tp\figura.h
+	<string>
+	<iostream>
+
+1590372915 source:c:\users\nicol\desktop\tp 22-5\tp\listas.cpp
+	"Figura.h"
+	"Color.h"
+	"Listas.h"
+	"ColoresLista.h"
+	<iostream>
+	<string>
+	<stdlib.h>
+
+1590289517 c:\users\nicol\desktop\tp 22-5\tp\listas.h
+	"Figura.h"
+	"Color.h"
+	"ColoresLista.h"
+	<string>
+
+1590290797 source:c:\users\nicol\desktop\tp 22-5\tp\main.cpp
+	<iostream>
+	<stdlib.h>
+	<string>
+	"Figura.h"
+	"Listas.h"
+	"ListasFunciones.h"
+
+1590289513 c:\users\nicol\desktop\tp 22-5\tp\listasfunciones.h
+	"Listas.h"
+
+1590373160 source:c:\users\nicol\desktop\tp 22-5\tp\listasfunciones.cpp
+	<fstream>
+	<stdlib.h>
+	"ListasFunciones.h"
+
+1590374022 source:c:\users\camil\downloads\final\tp\color.cpp
+	"Color.h"
+
+1590374783 c:\users\camil\downloads\final\tp\color.h
+	<string>
+	<iostream>
+
+1590374815 source:c:\users\camil\downloads\final\tp\coloreslista.cpp
+	"ColoresLista.h"
+	"Color.h"
+
+1590200213 c:\users\camil\downloads\final\tp\coloreslista.h
+	"Color.h"
+	<string>
+
+1590454253 source:c:\users\camil\downloads\final\tp\listas.cpp
+	"Figura.h"
+	"Color.h"
+	"Listas.h"
+	"ColoresLista.h"
+	<iostream>
+
+1590280590 c:\users\camil\downloads\final\tp\figura.h
+	<string>
+	<iostream>
+
+1590374783 c:\users\camil\downloads\final\tp\listas.h
+	"Figura.h"
+	"Color.h"
+	"ColoresLista.h"
+	<string>
+
+1590460465 source:c:\users\camil\downloads\final\tp\listasfunciones.cpp
+	<fstream>
+	<stdlib.h>
+	"ListasFunciones.h"
+
+1590460465 c:\users\camil\downloads\final\tp\listasfunciones.h
+	"Listas.h"
+
+1590373905 source:c:\users\camil\downloads\final\tp\figura.cpp
+	"Figura.h"
+	<math.h>
+
+1590454253 source:c:\users\camil\downloads\final\tp\main.cpp
+	<iostream>
+	<stdlib.h>
+	<string>
+	"Figura.h"
+	"Listas.h"
+	"ListasFunciones.h"
+
+1590374022 source:c:\users\camil\desktop\tp-final\color.cpp
+	"Color.h"
+
+1590374783 c:\users\camil\desktop\tp-final\color.h
+	<string>
+	<iostream>
+
+1590374815 source:c:\users\camil\desktop\tp-final\coloreslista.cpp
+	"ColoresLista.h"
+	"Color.h"
+
+1590200213 c:\users\camil\desktop\tp-final\coloreslista.h
+	"Color.h"
+	<string>
+
+1590461647 source:c:\users\camil\desktop\tp-final\figura.cpp
+	"Figura.h"
+	<math.h>
+
+1590280590 c:\users\camil\desktop\tp-final\figura.h
+	<string>
+	<iostream>
+
+1590454253 source:c:\users\camil\desktop\tp-final\listas.cpp
+	"Figura.h"
+	"Color.h"
+	"Listas.h"
+	"ColoresLista.h"
+	<iostream>
+
+1590374783 c:\users\camil\desktop\tp-final\listas.h
+	"Figura.h"
+	"Color.h"
+	"ColoresLista.h"
+	<string>
+
+1590462219 source:c:\users\camil\desktop\tp-final\main.cpp
+	<iostream>
+	<stdlib.h>
+	<string>
+	"Figura.h"
+	"Listas.h"
+	"ListasFunciones.h"
+
+1590462220 c:\users\camil\desktop\tp-final\listasfunciones.h
+	"Listas.h"
+
+1590461127 source:c:\users\camil\desktop\tp-final\listasfunciones.cpp
+	<fstream>
+	<stdlib.h>
+	"ListasFunciones.h"
+
