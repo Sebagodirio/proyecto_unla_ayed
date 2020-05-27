@@ -5,7 +5,7 @@
 
 using namespace std;
 /*
-Axiomas:  
+Axiomas:
 -siguiente debe apuntar al siguiente nodo, en el caso que este sea el ultimo debe ser NULL.
 */
 struct EstructuraListaColor
@@ -57,6 +57,7 @@ int coloresLista_getTamanio(ListaColores lista);
 //Pre-condiciones: La lista tiene que estar creada.
 //Post-condiciones: La lista con todos sus nodos y colores es borrada.
 void coloresLista_borrarLista(ListaColores &lista);
+
 
 
 #endif // COLORESLISTA_H_INCLUDED

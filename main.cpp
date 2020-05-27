@@ -19,8 +19,6 @@ using namespace std;
 */
 
 
-
-
 int menu();
 string pedirNombreArchivo();
 
@@ -44,8 +42,7 @@ int main()
     leerArchivo(listaOrdenadaPorArea,listaOrdenadaPorFigura,listaOrdenadaPorFiguraColor,colores,nombreArchivo);
     int cantFiguras=cantidadDeFiguras(listaOrdenadaPorArea);
 
-
-    while(opcion!=5)
+    while(opcion!=6)
     {
         system("pause");
         system("cls");
@@ -66,7 +63,9 @@ int main()
                 break;
         case 4: mostrarOrdenDeIngresoPorColor(listaOrdenadaPorArea,colores);
                 break;
-        case 5: cout << "\n\tGracias por utilizar nuestro programa.\n"<<endl;
+        case 5: agregarNuevaFigura(listaOrdenadaPorArea,listaOrdenadaPorFigura,listaOrdenadaPorFiguraColor,colores,nombreArchivo);
+                break;
+        case 6: cout << "\n\tGracias por utilizar nuestro programa.\n"<<endl;
                 break;
         default:cout << "Ingreso una opcion incorrecta. Vuelva a intentarlo: "<<endl;
         }
@@ -90,7 +89,8 @@ int menu()
     cout << "[2] Mostrar el total de plastico utilizado por figura."<<endl;
     cout << "[3] Mostrar el total de plastico utilizado por figura-color."<<endl;
     cout << "[4] Mostrar el orden de ingreso de las figuras por color."<<endl;
-    cout << "[5] Salir del programa."<<endl;
+    cout << "[5] Agregar una nueva figura."<<endl;
+    cout << "[6] Salir del programa."<<endl;
     cout << endl;
     cout << "----------------------------------------------------------------------------------"<<endl;
     cout << "Opcion: ";
@@ -114,9 +114,13 @@ string pedirNombreArchivo(){
         cout << "El nombre ingresado del archivo es: "<<nombre<<endl;
 
         control=archivoExiste(nombre);
-        if(control==bien)return nombre;
+        if(control==bien){
+            cout << "\nARCHIVO ENCONTRADO CORRECTAMENTE.\n\n";
+            return nombre;
+        }
+
         else{
-        cout << "ERROR. EL ARCHIVO NO EXISTE.\n\n";
+        cout << "\nERROR. EL ARCHIVO NO EXISTE.\n\n";
         }
     }
     return "vacio";

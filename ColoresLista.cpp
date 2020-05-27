@@ -46,7 +46,7 @@ void coloresLista_mostrarTodosLosElementos(ListaColores lista)
 {
     while(lista != NULL)
     {
-        cout << color_getNombre(lista->color) << endl;
+        cout << color_getNombre(lista->color) << " - ";
         lista = lista->siguiente;
     }
 }
