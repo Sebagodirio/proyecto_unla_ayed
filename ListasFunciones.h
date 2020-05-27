@@ -58,5 +58,6 @@ int archivoExiste(string nombreArchivo);
 int mostrarListaOrdenadaPorArea(ListaFigura listaFigura);
 //POST-CONDICIONES: SE MUESTRA LA LISTA Y FINALMENTE SE MUESTRA LA SUMA DE TODAS LAS AREAS
 
+int agregarNuevaFigura(ListaFigura &listaFigura,ListaFigura &listaOrdenadaPorFigura,ListaFigura &listaOrdenadaPorFiguraColor,ListaColores &colores,string nombreArchivo);
 
 #endif // LISTASFUNCIONES_H_INCLUDED

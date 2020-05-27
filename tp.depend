@@ -365,21 +365,24 @@
 	<string>
 	<iostream>
 
-1590374815 source:c:\users\camil\desktop\tp-final\coloreslista.cpp
+1590539964 source:c:\users\camil\desktop\tp-final\coloreslista.cpp
 	"ColoresLista.h"
 	"Color.h"
 
-1590200213 c:\users\camil\desktop\tp-final\coloreslista.h
+1590539964 c:\users\camil\desktop\tp-final\coloreslista.h
 	"Color.h"
 	<string>
 
-1590461647 source:c:\users\camil\desktop\tp-final\figura.cpp
+1590542259 source:c:\users\camil\desktop\tp-final\figura.cpp
 	"Figura.h"
 	<math.h>
+	<fstream>
+	<stdlib.h>
 
-1590280590 c:\users\camil\desktop\tp-final\figura.h
+1590541320 c:\users\camil\desktop\tp-final\figura.h
 	<string>
 	<iostream>
+	"ColoresLista.h"
 
 1590454253 source:c:\users\camil\desktop\tp-final\listas.cpp
 	"Figura.h"
@@ -394,7 +397,7 @@
 	"ColoresLista.h"
 	<string>
 
-1590462219 source:c:\users\camil\desktop\tp-final\main.cpp
+1590542069 source:c:\users\camil\desktop\tp-final\main.cpp
 	<iostream>
 	<stdlib.h>
 	<string>
@@ -402,10 +405,10 @@
 	"Listas.h"
 	"ListasFunciones.h"
 
-1590462220 c:\users\camil\desktop\tp-final\listasfunciones.h
+1590541461 c:\users\camil\desktop\tp-final\listasfunciones.h
 	"Listas.h"
 
-1590461127 source:c:\users\camil\desktop\tp-final\listasfunciones.cpp
+1590542259 source:c:\users\camil\desktop\tp-final\listasfunciones.cpp
 	<fstream>
 	<stdlib.h>
 	"ListasFunciones.h"

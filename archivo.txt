@@ -12,4 +12,4 @@ rectangulo azul 3; 5
 triangulo rojo 3; 1,5
 circulo amarillo 3,2
 cilindro violeta 4;1
-
+circulo rosa 3
