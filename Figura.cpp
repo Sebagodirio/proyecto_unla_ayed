@@ -8,61 +8,60 @@ using namespace std;
 
 Figura crearFiguraPorTeclado(string nombreArchivo,ListaColores &lista){
 
-    int controlTipo=0,controlColor=0,numFigura;
-
+    int numFigura = -1;
     string t,c,control;
     float uno,dos;
-
-    while(controlTipo!=1){
-    cout << "Digite el tipo de figura. Puede ingresar [circulo/cubo/rectangulo/triangulo/cilindro]: ";
-    getline(cin,t);
-    numFigura = obtenerNumeroFigura(t);
-    if( 0 <= numFigura  &&  5 > numFigura ){
-        controlTipo=1;
-    }
-    else{
-        cout << "\nIngreso un tipo inexistente. Intentelo de nuevo.\n"<<endl;
-    }
-    }
-
+    
+    do{        
+        cout << "Digite el tipo de figura. Puede ingresar [circulo/cubo/rectangulo/triangulo/cilindro]: ";
+        getline(cin,t);
+        
+        numFigura = obtenerNumeroFigura(t);
+        
+        if( numFigura == -1){
+            cout << "\nIngreso un tipo inexistente. Intentelo de nuevo.\n"<<endl;
+        }
+        
+    }while(numFigura == -1);
+    
     system("cls");
+    
+    int indiceColor = 0;
+    
+    do{
+        cout << "Digite el color de la figura. Recuerde que como maximo pueden ser 10 colores.\nCantidad de colores cargados actualmente: "<< coloresLista_getTamanio(lista) << endl;
+        cout << "Colores cargados hasta el momento: ";
+        coloresLista_mostrarTodosLosElementos(lista);
+        cout<<endl;
+        cout << "Color elegido: ";
+        getline(cin,c);
 
-    while(controlColor!=1){
+        int indiceColor = coloresLista_indiceDelColor(lista, c);
 
-    cout << "Digite el color de la figura. Recuerde que como maximo pueden ser 10 colores.\nCantidad de colores: "<<coloresLista_getTamanio(lista)<<endl;
-    cout << "Colores disponibles: ";
-    coloresLista_mostrarTodosLosElementos(lista);
-    cout<<endl;
-    cout << "Color elegido: ";
-    getline(cin,c);
-
-    if( coloresLista_getTamanio(lista)<10 ){
-        controlColor=1;
-    }
-    else{
-        cout << "\nSupero el limite de colores. Intente eligiendo uno de los colores disponibles.\n"<<endl;
-    }
-    cout << "\n"<<endl;
-    }
+        if( coloresLista_getTamanio(lista) == 9 && indiceColor == 0 ){
+            cout << "\nSupero el limite de colores. Intente eligiendo uno de los colores disponibles.\n" << endl;
+        }
+        
+    }while( (coloresLista_getTamanio(lista) == 9 && indiceColor == 0)  || indiceColor == 0);
 
     system("cls");
 
     cout << "Ingrese el primer valor: ";
     getline(cin,control);
-    uno= atoi(control.c_str());
+    uno = atoi(control.c_str());
 
     switch(numFigura){
-    case circulo: dos=0;break;
-    case cilindro: dos=1;break;
-    case cubo: dos=0;break;
-    case triangulo: dos=1;break;
-    case rectangulo: dos=1;break;
-    }
-
-    if(dos==1){
-    cout << "Ingrese el segundo valor: ";
-    getline(cin,control);
-    dos = atoi(control.c_str());
+        case circulo: 
+            dos=0;
+            break;
+        case cubo: 
+            dos=0;
+            break;
+        default:
+            cout << "Ingrese el segundo valor: ";
+            getline(cin, control);
+            dos = atoi( control.c_str() );
+            break;
     }
 
     guardarFiguraArchivo(nombreArchivo,t,c,uno,dos);
