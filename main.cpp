@@ -45,7 +45,7 @@ int main()
     int cantFiguras=cantidadDeFiguras(listaOrdenadaPorArea);
 
 
-    while(opcion!=7)
+    while(opcion!=6)
     {
         system("pause");
         system("cls");
@@ -69,10 +69,7 @@ int main()
         case 5: agregarNuevaFigura(listaOrdenadaPorArea,listaOrdenadaPorFigura,listaOrdenadaPorFiguraColor,colores,nombreArchivo);
                 break;
 
-        case 6: cout << "\tFIGURAS ORDENADAS POR ORDEN DE INGRESO:\n"<<endl;
-                mostrarListaOrdenadaPorIngreso(listaOrdenadaPorIngreso);
-                break;
-        case 7: cout << "\n\tGracias por utilizar nuestro programa.\n"<<endl;
+        case 6: cout << "\n\tGracias por utilizar nuestro programa.\n"<<endl;
                 break;
         default:cout << "Ingreso una opcion incorrecta. Vuelva a intentarlo: "<<endl;
         }

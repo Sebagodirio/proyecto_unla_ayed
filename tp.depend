@@ -446,13 +446,13 @@
 	"ColoresLista.h"
 	<iostream>
 
-1590610395 c:\users\usuario\desktop\tp1\proyecto_unla_ayed\listas.h
+1590674010 c:\users\usuario\desktop\tp1\proyecto_unla_ayed\listas.h
 	"Figura.h"
 	"Color.h"
 	"ColoresLista.h"
 	<string>
 
-1590623383 source:c:\users\usuario\desktop\tp1\proyecto_unla_ayed\listasfunciones.cpp
+1590627248 source:c:\users\usuario\desktop\tp1\proyecto_unla_ayed\listasfunciones.cpp
 	<fstream>
 	<stdlib.h>
 	"ListasFunciones.h"

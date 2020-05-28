@@ -279,7 +279,7 @@ int mostrarListaOrdenadaPorIngreso(ListaFigura listaFigura){
     int orden = 0;
 
     Nodo*actual=listaFigura->inicio;
-        cout<<"-----------------------"<<endl;
+
     while(actual!=NULL){
         cout<< "ORDEN DE INGRESO: |"<<orden<<"|\n"<<endl;
         mostrarFiguraOrdenada(actual->figura);
