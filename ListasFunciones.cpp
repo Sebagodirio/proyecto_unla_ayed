@@ -125,13 +125,13 @@ string separarTexto(string texto, int inicio,int fin){
 
 return cadena;}
 
+
 void mostrarOrdenDeIngresoPorColor(ListaFigura &listaFiguras, ListaColores &listaColores){
     if(listaFiguras == NULL || listaColores == NULL ) return;
-    float suma=0;
+    float suma = 0;
     Color aux;
     string auxColor;
-    Figura auxFigura;
-    int posicion;
+    Nodo*actual=NULL;
 
     cout << "\tORDEN DE INGRESO POR COLOR:\n"<<endl;
 
@@ -140,18 +140,15 @@ void mostrarOrdenDeIngresoPorColor(ListaFigura &listaFiguras, ListaColores &list
         auxColor=color_getNombre(aux);
         cout << "------------------------------------\n"<<endl;
         cout << "COLOR: |"<<auxColor<< "|\n"<<endl;
+        actual=listaFiguras->inicio;
+        while(actual!=NULL){
 
-        for(int j=0;j<getTam(listaFiguras);j++){
-
-            posicion=encontrarPosicionOrden(listaFiguras,j);
-            if(posicion!=errorNoEncontrado){
-                obtenerFigura(listaFiguras,posicion,auxFigura);
-                if(getColor(auxFigura)==auxColor){
-                    mostrarFigura(auxFigura);
-                    suma+=getArea(auxFigura);
+            if(getColor(actual->figura) == auxColor){
+                mostrarFigura(actual->figura);
+                suma+=getArea(actual->figura);
                 }
-            }
 
+            actual=actual->siguiente;
         }
         cout << "El total de plastico gastado por el color "<<auxColor<<" : | "<<suma<<" |"<<endl;
         suma=0;
@@ -160,21 +157,6 @@ void mostrarOrdenDeIngresoPorColor(ListaFigura &listaFiguras, ListaColores &list
         cout << "------------------------------------\n"<<endl;
 }
 
-int encontrarPosicionOrden(ListaFigura &listaFigura,int orden){
-    if(listaFigura==NULL) return errorEliminado;
-    else if(listaFigura->inicio==NULL) return errorVacio;
-
-    int pos=0;
-    Nodo*actual=listaFigura->inicio;
-    while(actual!=NULL){
-        if(getOrden(actual->figura)==orden){
-            return pos;
-        }
-        actual=actual->siguiente;
-        pos++;
-    }
-    return errorNoEncontrado;
-}
 
 int cantidadDeFiguras(ListaFigura &lista){
     if(lista == NULL)return errorVacio;
@@ -273,35 +255,17 @@ int mostrarListaOrdenadaPorArea(ListaFigura listaFigura){
     return bien;
 }
 
-int mostrarListaOrdenadaPorIngreso(ListaFigura listaFigura){
-    if(listaFigura==NULL) return errorEliminado;
-    else if(listaFigura->inicio==NULL) return errorVacio;
-    int orden = 0;
-
-    Nodo*actual=listaFigura->inicio;
-        cout<<"-----------------------"<<endl;
-    while(actual!=NULL){
-        cout<< "ORDEN DE INGRESO: |"<<orden<<"|\n"<<endl;
-        mostrarFiguraOrdenada(actual->figura);
-        orden++;
-        actual=actual->siguiente;
-    }
-
-    cout << endl;
-
-    return bien;
-}
-
-int agregarNuevaFigura(ListaFigura &listaFigura,ListaFigura &listaOrdenadaPorFigura,ListaFigura &listaOrdenadaPorFiguraColor,ListaColores &colores,string nombreArchivo){
+int agregarNuevaFigura(ListaFigura &listaFigura,ListaFigura &listaOrdenadaPorFigura,ListaFigura &listaOrdenadaPorIngreso,ListaFigura &listaOrdenadaPorFiguraColor,ListaColores &colores,string nombreArchivo){
 
             Figura figura = crearFiguraPorTeclado(nombreArchivo,colores);
             figura->orden=getTam(listaFigura);
             //INSERTAR EN LA LISTA
             coloresLista_agregarAlInicioSinRepetir(colores, getColor(figura));
             insertarPorArea(listaFigura, figura);
+            insertarAlFinal(listaOrdenadaPorIngreso,figura);
             insertarPorFiguraColor(listaOrdenadaPorFiguraColor, figura);
             insertarPorFigura(listaOrdenadaPorFigura, figura);
-            cout << "\tFIGURA AGREGADA CORRECTAMENTE"<<endl;
+            cout << "\n\tFIGURA AGREGADA CORRECTAMENTE\n"<<endl;
 
 return bien;
 }

@@ -13,3 +13,7 @@ triangulo rojo 3; 1,5
 circulo amarillo 3,2
 cilindro violeta 4;1
 circulo rosa 3
+cubo azul 4
+cubo rosa 3
+cubo blanco 1
+rectangulo rosa 5;8

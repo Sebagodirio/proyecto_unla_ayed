@@ -3,7 +3,6 @@
 #include "Listas.h"
 
 
-
 //PRE-CONDICIONES: Recibe una lista por parametro.
 void mostrarFigurasOrdenadasPorFiguraColor(ListaFigura lista);
 //PRE-CONDICIONES: Muestra la lista ordenada por figura-color.
@@ -37,10 +36,6 @@ string separarTexto(string texto, int inicio,int fin);
 void mostrarOrdenDeIngresoPorColor(ListaFigura &listaFiguras, ListaColores &listaColores);
 //POST-CONDICIONES: MUESTRA EL ORDEN DE INGRESO POR COLOR DE LAS FIGURAS
 
-//PRE-CONDICION: SE DEBE MANDAR LA LISTA CARGADA Y EL ORDEN QUE SE QUIERE ENCONTRAS
-int encontrarPosicionOrden(ListaFigura &listaFigura,int orden);
-//POST-CONDICION: SI ENCONTRO LA FIGURA CON EL ORDEN INDICADO DEVUELVE EN QUE POSICION DE LA LISTA SE ENCUENTRA.
-//                SI NO LA ENCONTRO DEVUELVE -10
 
 //PRE-CONDICIONES: LA LISTA DEBE ESTAR CREADA Y ORDENADA POR FIGURA. SE DEBEN MANDAR LA CANTIDAD DE FIGURAS.
 int mostrarTotalPorFigura(ListaFigura &listsOrdenadaPorFigura, int cantidadDeFiguras);//agregado
@@ -58,8 +53,8 @@ int archivoExiste(string nombreArchivo);
 int mostrarListaOrdenadaPorArea(ListaFigura listaFigura);
 //POST-CONDICIONES: SE MUESTRA LA LISTA Y FINALMENTE SE MUESTRA LA SUMA DE TODAS LAS AREAS
 
-int mostrarListaOrdenadaPorIngreso(ListaFigura listaFigura);
-
-int agregarNuevaFigura(ListaFigura &listaFigura,ListaFigura &listaOrdenadaPorFigura,ListaFigura &listaOrdenadaPorFiguraColor,ListaColores &colores,string nombreArchivo);
+//PRE-CONDICIONES: TODAS LAS LISTAS DEBEN ESTAR CREADAS. MANDAR UN NOMBRE DE ARCHIVO EXISTENTE.
+int agregarNuevaFigura(ListaFigura &listaFigura,ListaFigura &listaOrdenadaPorFigura,ListaFigura &listaOrdenadaPorIngreso,ListaFigura &listaOrdenadaPorFiguraColor,ListaColores &colores,string nombreArchivo);
+//POST-CONDICIONES: SE INSERTA LA NUEVA FIGURA EN TODAS LAS LISTAS DEL PROGRAMA.
 
 #endif // LISTASFUNCIONES_H_INCLUDED

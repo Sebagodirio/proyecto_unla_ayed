@@ -11,23 +11,24 @@ Figura crearFiguraPorTeclado(string nombreArchivo,ListaColores &lista){
     int numFigura = -1;
     string t,c,control;
     float uno,dos;
-    
-    do{        
+
+    do{
         cout << "Digite el tipo de figura. Puede ingresar [circulo/cubo/rectangulo/triangulo/cilindro]: ";
         getline(cin,t);
-        
+
         numFigura = obtenerNumeroFigura(t);
-        
+
         if( numFigura == -1){
             cout << "\nIngreso un tipo inexistente. Intentelo de nuevo.\n"<<endl;
         }
-        
+
     }while(numFigura == -1);
-    
+
     system("cls");
-    
+
     int indiceColor = 0;
-    
+
+    bool flag;
     do{
         cout << "Digite el color de la figura. Recuerde que como maximo pueden ser 10 colores.\nCantidad de colores cargados actualmente: "<< coloresLista_getTamanio(lista) << endl;
         cout << "Colores cargados hasta el momento: ";
@@ -37,30 +38,56 @@ Figura crearFiguraPorTeclado(string nombreArchivo,ListaColores &lista){
         getline(cin,c);
 
         int indiceColor = coloresLista_indiceDelColor(lista, c);
-
-        if( coloresLista_getTamanio(lista) == 9 && indiceColor == 0 ){
+        flag = false;
+        if( coloresLista_getTamanio(lista) == 10 && indiceColor == 0 ){
             cout << "\nSupero el limite de colores. Intente eligiendo uno de los colores disponibles.\n" << endl;
+            flag = true;
         }
-        
-    }while( (coloresLista_getTamanio(lista) == 9 && indiceColor == 0)  || indiceColor == 0);
+
+
+    }while(flag);
 
     system("cls");
 
-    cout << "Ingrese el primer valor: ";
-    getline(cin,control);
-    uno = atoi(control.c_str());
 
     switch(numFigura){
-        case circulo: 
-            dos=0;
+
+        case circulo:
+            cout << "Ingrese el radio del circulo: ";
+            getline(cin,control);
+            uno = atoi(control.c_str());
             break;
-        case cubo: 
-            dos=0;
+        case cubo:
+            cout << "Ingrese la longitud del lado del cubo: ";
+            getline(cin,control);
+            uno = atoi(control.c_str());
             break;
-        default:
-            cout << "Ingrese el segundo valor: ";
-            getline(cin, control);
-            dos = atoi( control.c_str() );
+        case cilindro:
+            cout << "Ingrese el radio de la base del cilindro: ";
+            getline(cin,control);
+            uno = atoi(control.c_str());
+
+            cout << "Ingrese la altura del cilindro: ";
+            getline(cin,control);
+            dos = atoi(control.c_str());
+            break;
+        case triangulo:
+            cout << "Ingrese el cateto mayor del triangulo: ";
+            getline(cin,control);
+            uno = atoi(control.c_str());
+
+            cout << "Ingrese el cateto menor del triangulo: ";
+            getline(cin,control);
+            dos = atoi(control.c_str());
+            break;
+        case rectangulo:
+            cout << "Ingrese la base del rectangulo: ";
+            getline(cin,control);
+            uno = atoi(control.c_str());
+
+            cout << "Ingrese la altura del rectangulo: ";
+            getline(cin,control);
+            dos = atoi(control.c_str());
             break;
     }
 
@@ -118,16 +145,7 @@ int mostrarFigura(Figura& a)
 
     return 1;
 }
-int mostrarFiguraOrdenada(Figura& a)
-{
-    cout << "Tipo: "<<getTipo(a)<<endl;
-    cout << "Color: "<<getColor(a)<<endl;
-    cout << "Area: "<<getArea(a)<<endl;
 
-    cout << endl;
-
-    return 1;
-}
 
 int obtenerNumeroFigura(string tipo)
 {

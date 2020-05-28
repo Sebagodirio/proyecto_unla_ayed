@@ -45,7 +45,7 @@ int main()
     int cantFiguras=cantidadDeFiguras(listaOrdenadaPorArea);
 
 
-    while(opcion!=7)
+    while(opcion!=6)
     {
         system("pause");
         system("cls");
@@ -64,15 +64,11 @@ int main()
         case 3: cout << "\tCANTIDAD DE PLASTICO GASTADO POR FIGURA-COLOR:\n"<<endl;
                 mostrarFigurasOrdenadasPorFiguraColor(listaOrdenadaPorFiguraColor);
                 break;
-        case 4: mostrarOrdenDeIngresoPorColor(listaOrdenadaPorArea,colores);
+        case 4: mostrarOrdenDeIngresoPorColor(listaOrdenadaPorIngreso,colores);
                 break;
-        case 5: agregarNuevaFigura(listaOrdenadaPorArea,listaOrdenadaPorFigura,listaOrdenadaPorFiguraColor,colores,nombreArchivo);
+        case 5: agregarNuevaFigura(listaOrdenadaPorArea,listaOrdenadaPorFigura,listaOrdenadaPorIngreso,listaOrdenadaPorFiguraColor,colores,nombreArchivo);
                 break;
-
-        case 6: cout << "\tFIGURAS ORDENADAS POR ORDEN DE INGRESO:\n"<<endl;
-                mostrarListaOrdenadaPorIngreso(listaOrdenadaPorIngreso);
-                break;
-        case 7: cout << "\n\tGracias por utilizar nuestro programa.\n"<<endl;
+        case 6: cout << "\n\tGracias por utilizar nuestro programa.\n"<<endl;
                 break;
         default:cout << "Ingreso una opcion incorrecta. Vuelva a intentarlo: "<<endl;
         }
@@ -98,8 +94,7 @@ int menu()
     cout << "[3] Mostrar el total de plastico utilizado por figura-color."<<endl;
     cout << "[4] Mostrar el orden de ingreso de las figuras por color."<<endl;
     cout << "[5] Agregar una nueva figura."<<endl;
-    cout << "[6] Mostrar figuras ordenadas por orden de ingreso."<<endl;
-    cout << "[7] Salir del programa."<<endl;
+    cout << "[6] Salir del programa."<<endl;
     cout << endl;
     cout << "----------------------------------------------------------------------------------"<<endl;
     cout << "Opcion: ";
@@ -115,21 +110,22 @@ string pedirNombreArchivo(){
 
     while(control!=bien){
         nombre="";
-        cout << "Ingrese el nombre del archivo donde se encuentran las figuras: \n[NOTA] Solo ingrese el nombre (sin el .txt) || Si ingresa el numero 1 se leera archivo.txt por defecto."<<endl;
+        cout << "\n\tIngrese el nombre del archivo donde se encuentran las figuras: \n\n\t[NOTA] Solo ingrese el nombre (sin el .txt) \n\tSi ingresa el numero 1 se leera archivo.txt por defecto."<<endl;
+        cout << "\t...: ";
         getline(cin,nombre);
         if(nombre == "1")nombre="archivo";
         nombre += ".txt";
 
-        cout << "El nombre ingresado del archivo es: "<<nombre<<endl;
+        cout << "\tEl nombre ingresado del archivo es: "<<nombre<<endl;
 
         control=archivoExiste(nombre);
         if(control==bien){
-            cout << "\nARCHIVO ENCONTRADO CORRECTAMENTE.\n\n";
+            cout << "\n\tARCHIVO ENCONTRADO CORRECTAMENTE.\n\n";
             return nombre;
         }
 
         else{
-        cout << "\nERROR. EL ARCHIVO NO EXISTE.\n\n";
+        cout << "\n\tERROR. EL ARCHIVO NO EXISTE.\n\n";
         }
     }
     return "vacio";
