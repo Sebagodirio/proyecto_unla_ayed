@@ -31,18 +31,21 @@ int main()
     ListaFigura listaOrdenadaPorArea = NULL;
     ListaFigura listaOrdenadaPorFigura = NULL;
     ListaFigura listaOrdenadaPorFiguraColor = NULL;
+    ListaFigura listaOrdenadaPorIngreso = NULL;
     ListaColores colores = NULL;
     crearListaFigura(listaOrdenadaPorArea);
     crearListaFigura(listaOrdenadaPorFigura);
     crearListaFigura(listaOrdenadaPorFiguraColor);
+    crearListaFigura(listaOrdenadaPorIngreso);
     system("pause");
     system("cls");
     string nombreArchivo=pedirNombreArchivo();
 
-    leerArchivo(listaOrdenadaPorArea,listaOrdenadaPorFigura,listaOrdenadaPorFiguraColor,colores,nombreArchivo);
+    leerArchivo(listaOrdenadaPorArea,listaOrdenadaPorFigura,listaOrdenadaPorIngreso,listaOrdenadaPorFiguraColor,colores,nombreArchivo);
     int cantFiguras=cantidadDeFiguras(listaOrdenadaPorArea);
 
-    while(opcion!=6)
+
+    while(opcion!=7)
     {
         system("pause");
         system("cls");
@@ -65,7 +68,11 @@ int main()
                 break;
         case 5: agregarNuevaFigura(listaOrdenadaPorArea,listaOrdenadaPorFigura,listaOrdenadaPorFiguraColor,colores,nombreArchivo);
                 break;
-        case 6: cout << "\n\tGracias por utilizar nuestro programa.\n"<<endl;
+
+        case 6: cout << "\tFIGURAS ORDENADAS POR ORDEN DE INGRESO:\n"<<endl;
+                mostrarListaOrdenadaPorIngreso(listaOrdenadaPorIngreso);
+                break;
+        case 7: cout << "\n\tGracias por utilizar nuestro programa.\n"<<endl;
                 break;
         default:cout << "Ingreso una opcion incorrecta. Vuelva a intentarlo: "<<endl;
         }
@@ -74,6 +81,7 @@ int main()
     destruirListaFigura(listaOrdenadaPorArea);
     liberarMemoriaLista(listaOrdenadaPorFigura);
     liberarMemoriaLista(listaOrdenadaPorFiguraColor);
+    liberarMemoriaLista(listaOrdenadaPorIngreso);
     coloresLista_borrarLista(colores);
 
     return 0;
@@ -90,7 +98,8 @@ int menu()
     cout << "[3] Mostrar el total de plastico utilizado por figura-color."<<endl;
     cout << "[4] Mostrar el orden de ingreso de las figuras por color."<<endl;
     cout << "[5] Agregar una nueva figura."<<endl;
-    cout << "[6] Salir del programa."<<endl;
+    cout << "[6] Mostrar figuras ordenadas por orden de ingreso."<<endl;
+    cout << "[7] Salir del programa."<<endl;
     cout << endl;
     cout << "----------------------------------------------------------------------------------"<<endl;
     cout << "Opcion: ";

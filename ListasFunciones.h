@@ -9,7 +9,7 @@ void mostrarFigurasOrdenadasPorFiguraColor(ListaFigura lista);
 //PRE-CONDICIONES: Muestra la lista ordenada por figura-color.
 
 //PRE-CONDICIONES: LAS LISTAS DEBEN ESTAR CREADAS Y SE DEBE MANDAR UN STRING CON EL NOMBRE DEL ARCHIVO QUE DESEA LEER
-int leerArchivo(ListaFigura &listaFigura,ListaFigura &listaOrdenadaPorFigura,ListaFigura &listaOrdenadaPorFiguraColor,ListaColores &colores,string nombreArchivo);
+int leerArchivo(ListaFigura &listaFigura,ListaFigura &listaOrdenadaPorFigura,ListaFigura &listaOrdenadaPorIngreso,ListaFigura &listaOrdenadaPorFiguraColor,ListaColores &colores,string nombreArchivo);
 //POST-CONDICIONES: SE CARGA LA LISTA CON LOS DATOS DEL ARCHIVO
 /*
     DEVUELVE 1 SI SE PUDO REALIZAR
@@ -57,6 +57,8 @@ int archivoExiste(string nombreArchivo);
 //PRE-CONDICIONES: LA LISTA DEBE ESTAR CREADA Y ORDENADA POR AREA
 int mostrarListaOrdenadaPorArea(ListaFigura listaFigura);
 //POST-CONDICIONES: SE MUESTRA LA LISTA Y FINALMENTE SE MUESTRA LA SUMA DE TODAS LAS AREAS
+
+int mostrarListaOrdenadaPorIngreso(ListaFigura listaFigura);
 
 int agregarNuevaFigura(ListaFigura &listaFigura,ListaFigura &listaOrdenadaPorFigura,ListaFigura &listaOrdenadaPorFiguraColor,ListaColores &colores,string nombreArchivo);
 
