@@ -49,6 +49,8 @@ int insertarPorArea(ListaFigura &listaFigura,Figura figura);
     Y LA FIGURA SE INSERTA EN EL FINAL DE LA LISTA, PARA REPRESENTAR EN QUE ORDEN FUERON LEIDAS.
 */
 
+int insertarAlFinal(ListaFigura &listaFigura,Figura figura);
+
 //PRE-CONDICIONES: LA LISTA DEBE ESTAR CREADA. SE DEBE MANDAR UNA FIGURA PARA INSERTAR. LA LISTA VA A QUEDAR ORDENADA POR FIGURA.
 int insertarPorFigura(ListaFigura &listaF, Figura figura);
 //POST-CONDICIONES: INSERTA A LA FIGURA SEGUN SU TIPO.

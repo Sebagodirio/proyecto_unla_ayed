@@ -31,7 +31,7 @@ void mostrarFigurasOrdenadasPorFiguraColor(ListaFigura lista){
 }
 
 
-int leerArchivo(ListaFigura &listaFigura,ListaFigura &listaOrdenadaPorFigura,ListaFigura &listaOrdenadaPorFiguraColor,ListaColores &colores,string nombreArchivo){//cambiada
+int leerArchivo(ListaFigura &listaFigura,ListaFigura &listaOrdenadaPorFigura,ListaFigura &listaOrdenadaPorIngreso,ListaFigura &listaOrdenadaPorFiguraColor,ListaColores &colores,string nombreArchivo){//cambiada
     ifstream archivo;
     string texto,aux;
     int i=0;
@@ -84,6 +84,7 @@ int leerArchivo(ListaFigura &listaFigura,ListaFigura &listaOrdenadaPorFigura,Lis
             //INSERTAR EN LA LISTA
             coloresLista_agregarAlInicioSinRepetir(colores, getColor(figura));
             insertarPorArea(listaFigura, figura);
+            insertarAlFinal(listaOrdenadaPorIngreso,figura);
             insertarPorFiguraColor(listaOrdenadaPorFiguraColor, figura);
             insertarPorFigura(listaOrdenadaPorFigura, figura);
             }
@@ -267,6 +268,25 @@ int mostrarListaOrdenadaPorArea(ListaFigura listaFigura){
     }
 
     cout << "Total de plastico gastado : | "<< sumaTotal << " |"<<endl;
+    cout << endl;
+
+    return bien;
+}
+
+int mostrarListaOrdenadaPorIngreso(ListaFigura listaFigura){
+    if(listaFigura==NULL) return errorEliminado;
+    else if(listaFigura->inicio==NULL) return errorVacio;
+    int orden = 0;
+
+    Nodo*actual=listaFigura->inicio;
+        cout<<"-----------------------"<<endl;
+    while(actual!=NULL){
+        cout<< "ORDEN DE INGRESO: |"<<orden<<"|\n"<<endl;
+        mostrarFiguraOrdenada(actual->figura);
+        orden++;
+        actual=actual->siguiente;
+    }
+
     cout << endl;
 
     return bien;

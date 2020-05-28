@@ -47,6 +47,8 @@ int guardarFiguraArchivo(string nombreArchivo,string tipo,string color,float val
 
 int mostrarFigura(Figura& a);
 
+int mostrarFiguraOrdenada(Figura& a);
+
 string getTipo(Figura &x);
 
 string getColor(Figura &x);

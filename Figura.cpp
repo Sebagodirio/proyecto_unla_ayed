@@ -118,6 +118,16 @@ int mostrarFigura(Figura& a)
 
     return 1;
 }
+int mostrarFiguraOrdenada(Figura& a)
+{
+    cout << "Tipo: "<<getTipo(a)<<endl;
+    cout << "Color: "<<getColor(a)<<endl;
+    cout << "Area: "<<getArea(a)<<endl;
+
+    cout << endl;
+
+    return 1;
+}
 
 int obtenerNumeroFigura(string tipo)
 {

@@ -36,6 +36,32 @@ int insertarPorArea(ListaFigura &listaFigura,Figura figura){
     }
     nuevoNodo->siguiente=aux1;
     return bien;
+
+}
+
+int insertarAlFinal(ListaFigura &listaFigura,Figura figura){
+    if(listaFigura==NULL) return errorEliminado;
+
+
+    Nodo* nuevoNodo=new struct Nodo();
+    nuevoNodo->figura=figura;
+    nuevoNodo->siguiente=NULL;
+
+    if(listaFigura->inicio==NULL){
+        listaFigura->inicio = nuevoNodo;
+
+        return bien;
+    }
+    Nodo*aux=listaFigura->inicio;
+
+    while(aux->siguiente != NULL){
+        aux = aux->siguiente;
+    }
+
+    aux->siguiente = nuevoNodo;
+
+
+    return bien;
 }
 
 int insertarPorFigura(ListaFigura &listaFigura, Figura figura){
