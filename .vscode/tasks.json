@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "C:/Users/Ezequielde la Fuente/Desktop/Eze/Code/C++/VS CODE/proyecto_unla_ayed/Color.cpp",
+                "C:/Users/Ezequielde la Fuente/Desktop/Eze/Code/C++/VS CODE/proyecto_unla_ayed/ColoresLista.cpp",
+                "C:/Users/Ezequielde la Fuente/Desktop/Eze/Code/C++/VS CODE/proyecto_unla_ayed/Figura.cpp",
+                "C:/Users/Ezequielde la Fuente/Desktop/Eze/Code/C++/VS CODE/proyecto_unla_ayed/Listas.cpp",
+                "C:/Users/Ezequielde la Fuente/Desktop/Eze/Code/C++/VS CODE/proyecto_unla_ayed/ListasFunciones.cpp",
+                "C:/Users/Ezequielde la Fuente/Desktop/Eze/Code/C++/VS CODE/proyecto_unla_ayed/main.cpp",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\MinGW\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        }
+    ]
+}

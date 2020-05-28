@@ -1,0 +1,3 @@
+{
+    "code-runner.customCommand": "cd \"c:\\Users\\Ezequielde la Fuente\\Desktop\\Eze\\Code\\C++\\VS CODE\\proyecto_unla_ayed\\\" ; if ($?) { g++ Color.cpp ColoresLista.cpp Figura.cpp Listas.cpp ListasFunciones.cpp main.cpp -o main } ; if ($?) { .\\main }"
+}
