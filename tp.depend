@@ -468,3 +468,58 @@
 	"Listas.h"
 	"ListasFunciones.h"
 
+1590374022 source:c:\users\camil\desktop\proyecto\proyecto_unla_ayed\color.cpp
+	"Color.h"
+
+1590374783 c:\users\camil\desktop\proyecto\proyecto_unla_ayed\color.h
+	<string>
+	<iostream>
+
+1590539964 source:c:\users\camil\desktop\proyecto\proyecto_unla_ayed\coloreslista.cpp
+	"ColoresLista.h"
+	"Color.h"
+
+1590539964 c:\users\camil\desktop\proyecto\proyecto_unla_ayed\coloreslista.h
+	"Color.h"
+	<string>
+
+1590795797 source:c:\users\camil\desktop\proyecto\proyecto_unla_ayed\figura.cpp
+	"Figura.h"
+	<math.h>
+	<fstream>
+	<stdlib.h>
+
+1590795797 c:\users\camil\desktop\proyecto\proyecto_unla_ayed\figura.h
+	<string>
+	<iostream>
+	"ColoresLista.h"
+
+1590795797 source:c:\users\camil\desktop\proyecto\proyecto_unla_ayed\listas.cpp
+	"Figura.h"
+	"Color.h"
+	"Listas.h"
+	"ColoresLista.h"
+	<iostream>
+
+1590795797 c:\users\camil\desktop\proyecto\proyecto_unla_ayed\listas.h
+	"Figura.h"
+	"Color.h"
+	"ColoresLista.h"
+	<string>
+
+1590795797 source:c:\users\camil\desktop\proyecto\proyecto_unla_ayed\listasfunciones.cpp
+	<fstream>
+	<stdlib.h>
+	"ListasFunciones.h"
+
+1590795797 c:\users\camil\desktop\proyecto\proyecto_unla_ayed\listasfunciones.h
+	"Listas.h"
+
+1590795797 source:c:\users\camil\desktop\proyecto\proyecto_unla_ayed\main.cpp
+	<iostream>
+	<stdlib.h>
+	<string>
+	"Figura.h"
+	"Listas.h"
+	"ListasFunciones.h"
+
