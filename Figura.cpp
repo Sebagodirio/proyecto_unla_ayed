@@ -10,7 +10,7 @@ Figura crearFiguraPorTeclado(string nombreArchivo,ListaColores &lista){
 
     int numFigura = -1;
     string t,c,control;
-    float uno,dos;
+    float uno,dos=0;  // es necesario que el valor dos este igualado a 0 para que se guarde bien en el archivo.
 
     do{
         cout << "Digite el tipo de figura. Puede ingresar [circulo/cubo/rectangulo/triangulo/cilindro]: ";
@@ -49,45 +49,44 @@ Figura crearFiguraPorTeclado(string nombreArchivo,ListaColores &lista){
 
     system("cls");
 
-
     switch(numFigura){
 
         case circulo:
             cout << "Ingrese el radio del circulo: ";
             getline(cin,control);
-            uno = atoi(control.c_str());
+            uno = atof(control.c_str());
             break;
         case cubo:
             cout << "Ingrese la longitud del lado del cubo: ";
             getline(cin,control);
-            uno = atoi(control.c_str());
+            uno = atof(control.c_str());
             break;
         case cilindro:
             cout << "Ingrese el radio de la base del cilindro: ";
             getline(cin,control);
-            uno = atoi(control.c_str());
+            uno = atof(control.c_str());
 
             cout << "Ingrese la altura del cilindro: ";
             getline(cin,control);
-            dos = atoi(control.c_str());
+            dos = atof(control.c_str());
             break;
         case triangulo:
             cout << "Ingrese el cateto mayor del triangulo: ";
             getline(cin,control);
-            uno = atoi(control.c_str());
+            uno = atof(control.c_str());
 
             cout << "Ingrese el cateto menor del triangulo: ";
             getline(cin,control);
-            dos = atoi(control.c_str());
+            dos = atof(control.c_str());
             break;
         case rectangulo:
             cout << "Ingrese la base del rectangulo: ";
             getline(cin,control);
-            uno = atoi(control.c_str());
+            uno = atof(control.c_str());
 
             cout << "Ingrese la altura del rectangulo: ";
             getline(cin,control);
-            dos = atoi(control.c_str());
+            dos = atof(control.c_str());
             break;
     }
 

@@ -17,3 +17,5 @@ cubo azul 4
 cubo rosa 3
 cubo blanco 1
 rectangulo rosa 5;8
+cilindro gris 4;1.5
+
