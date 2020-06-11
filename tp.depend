@@ -468,47 +468,47 @@
 	"Listas.h"
 	"ListasFunciones.h"
 
-1590608135 source:c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\color.cpp
+1590608136 source:c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\color.cpp
 	"Color.h"
 
-1590608135 c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\color.h
+1590608136 c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\color.h
 	<string>
 	<iostream>
 
-1590608135 source:c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\coloreslista.cpp
+1590608136 source:c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\coloreslista.cpp
 	"ColoresLista.h"
 	"Color.h"
 
-1590608135 c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\coloreslista.h
+1590608136 c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\coloreslista.h
 	"Color.h"
 	<string>
 
-1591883986 source:c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\figura.cpp
+1591883988 source:c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\figura.cpp
 	"Figura.h"
 	<math.h>
 	<fstream>
 	<stdlib.h>
 
-1591883960 c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\figura.h
+1591883962 c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\figura.h
 	<string>
 	<iostream>
 	"ColoresLista.h"
 
-1591884071 source:c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\listasfunciones.cpp
+1591884072 source:c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\listasfunciones.cpp
 	<fstream>
 	<stdlib.h>
 	"ListasFunciones.h"
 
-1590678724 c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\listasfunciones.h
+1591884234 c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\listasfunciones.h
 	"Listas.h"
 
-1590674978 c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\listas.h
+1590674980 c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\listas.h
 	"Figura.h"
 	"Color.h"
 	"ColoresLista.h"
 	<string>
 
-1591884026 source:c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\main.cpp
+1591884182 source:c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\main.cpp
 	<iostream>
 	<stdlib.h>
 	<string>
@@ -516,7 +516,7 @@
 	"Listas.h"
 	"ListasFunciones.h"
 
-1591368257 source:c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\listas.cpp
+1591368258 source:c:\users\usuario\desktop\unla\ayed\proyecto_unla_ayed\listas.cpp
 	"Figura.h"
 	"Color.h"
 	"Listas.h"
