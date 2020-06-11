@@ -31,7 +31,7 @@ typedef struct EstructuraFigura * Figura;
 Figura crearFigura(string tipo,string color,float v1,float v2);
 //POS-CONDICIONES: DEVUELVE UNA FIGURA CON LOS DATOS MANDADOS POR PARAMETRO.
 
-Figura crearFiguraPorTeclado(string nombreArchivo,ListaColores &lista);
+
 
 //PRE-CONDICIONES: DEBE MANDARSE UN STRING QUE INDICA QUE TIPO DE FIGURA ES.
 int obtenerNumeroFigura(string tipo);

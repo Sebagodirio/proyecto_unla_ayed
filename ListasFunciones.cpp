@@ -255,17 +255,4 @@ int mostrarListaOrdenadaPorArea(ListaFigura listaFigura){
     return bien;
 }
 
-int agregarNuevaFigura(ListaFigura &listaFigura,ListaFigura &listaOrdenadaPorFigura,ListaFigura &listaOrdenadaPorIngreso,ListaFigura &listaOrdenadaPorFiguraColor,ListaColores &colores,string nombreArchivo){
 
-            Figura figura = crearFiguraPorTeclado(nombreArchivo,colores);
-            figura->orden=getTam(listaFigura);
-            //INSERTAR EN LA LISTA
-            coloresLista_agregarAlInicioSinRepetir(colores, getColor(figura));
-            insertarPorArea(listaFigura, figura);
-            insertarAlFinal(listaOrdenadaPorIngreso,figura);
-            insertarPorFiguraColor(listaOrdenadaPorFiguraColor, figura);
-            insertarPorFigura(listaOrdenadaPorFigura, figura);
-            cout << "\n\tFIGURA AGREGADA CORRECTAMENTE\n"<<endl;
-
-return bien;
-}
