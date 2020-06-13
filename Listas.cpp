@@ -164,18 +164,25 @@ string * getTipos(ListaFigura &lista){
     }
     Nodo *actual = lista->inicio;
     int cantidadActualDeTipos = 0;
+
     while(actual != NULL){
+
         bool existeElTipo = false;
-        for(int i=0 ; i < cantidadActualDeTipos && tipos[i] != "Vacio" && !existeElTipo ; i++){
-            if(getTipo(actual->figura) == tipos[i]){
-                existeElTipo = true;
+
+            for(int i=0 ; ( i < cantidadActualDeTipos && tipos[i] != "Vacio" && !existeElTipo ) ; i++){
+
+                if(getTipo(actual->figura) == tipos[i]){
+                    existeElTipo = true;
+                }
+
             }
-        }
-        if(!existeElTipo){
-            tipos[cantidadActualDeTipos] = getTipo(actual->figura);
-            cantidadActualDeTipos++;
-        }
-        actual = actual->siguiente;
+
+            if(!existeElTipo){
+                tipos[cantidadActualDeTipos] = getTipo(actual->figura);
+                cantidadActualDeTipos++;
+            }
+
+            actual = actual->siguiente;
     }
     return tipos;
 }
@@ -234,9 +241,11 @@ int insertarPorFiguraColor(ListaFigura &lista, Figura figura){
     bool tipoYaExisteEnLaLista = false;
 
     for(int j = 0; j < 5  && *(nombresDeTipos + j) != "Vacio" && !tipoYaExisteEnLaLista ; j++){
+
         if( *(nombresDeTipos + j) == getTipo(figura) ){
             tipoYaExisteEnLaLista = true;
         }
+
     }
 
     delete []nombresDeTipos;
@@ -251,6 +260,7 @@ int insertarPorFiguraColor(ListaFigura &lista, Figura figura){
     string * nombresDeColores;
 
     int i = 0;
+
     do{
         if(getTipo(actual->figura) == getTipo(figura)){
 
@@ -278,6 +288,7 @@ int insertarPorFiguraColor(ListaFigura &lista, Figura figura){
             }
 
             int cantFigurasPorTipoyColor = getCantidadDeFigurasPorTipoYColor(lista, getTipo(figura), getColor(figura));
+
             i = 0;
 
             do{

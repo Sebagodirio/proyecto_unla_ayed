@@ -31,8 +31,6 @@ typedef struct EstructuraFigura * Figura;
 Figura crearFigura(string tipo,string color,float v1,float v2);
 //POS-CONDICIONES: DEVUELVE UNA FIGURA CON LOS DATOS MANDADOS POR PARAMETRO.
 
-Figura crearFiguraPorTeclado(string nombreArchivo,ListaColores &lista);
-
 //PRE-CONDICIONES: DEBE MANDARSE UN STRING QUE INDICA QUE TIPO DE FIGURA ES.
 int obtenerNumeroFigura(string tipo);
 //POST-CONDICIONES: DEVUELVE UN NUMERO DEPENDIENDO QUE FIGURA ES.
@@ -41,22 +39,30 @@ int obtenerNumeroFigura(string tipo);
 float calcularArea(string tipo,float v1,float v2);
 //POST-CONDICIONES: DEVUELVE EL VALOR DEL AREA DE LA FIGURA.
 
-int guardarFiguraArchivo(string nombreArchivo,string tipo,string color,float valorUno,float valorDos);
-
 /*##########################################################*/
 
+//PRE-CONDICIONES: DEBE MANDARSE UNA FIGURA CREADA
 int mostrarFigura(Figura& a);
+//POST-CONDICIONES: MUESTRA LA FIGURA
 
-
-
+//PRE-CONDICIONES: DEBE MANDARSE UNA FIGURA CREADA
 string getTipo(Figura &x);
+//POST CONDICIONES: DEVUELVE EL TIPO DE LA FIGURA
 
+//PRE-CONDICIONES: DEBE MANDARSE UNA FIGURA CREADA
 string getColor(Figura &x);
+//POST CONDICIONES: DEVUELVE EL COLOR DE LA FIGURA
 
+//PRE-CONDICIONES: DEBE MANDARSE UNA FIGURA CREADA
 float getArea(Figura &x);
+//POST CONDICIONES: DEVUELVE EL AREA DE LA FIGURA
 
+//PRE-CONDICIONES: DEBE MANDARSE UNA FIGURA CREADA
 int getOrden(Figura &x);
+//POST CONDICIONES: DEVUELVE EL ORDEN DE LA FIGURA
 
+//PRE-CONDICIONES: DEBE MANDARSE UNA FIGURA CREADA
 int destruirFigura(Figura &x);
+//POST CONDICIONES: SE LIBERA LA MEMORIA OCUPADA POR LA FIGURA
 
 #endif // FIGURA_H_INCLUDED

@@ -6,94 +6,7 @@
 
 using namespace std;
 
-Figura crearFiguraPorTeclado(string nombreArchivo,ListaColores &lista){
 
-    int numFigura = -1;
-    string t,c,control;
-    float uno,dos=0;  // es necesario que el valor dos este igualado a 0 para que se guarde bien en el archivo.
-
-    do{
-        cout << "Digite el tipo de figura. Puede ingresar [circulo/cubo/rectangulo/triangulo/cilindro]: ";
-        getline(cin,t);
-
-        numFigura = obtenerNumeroFigura(t);
-
-        if( numFigura == -1){
-            cout << "\nIngreso un tipo inexistente. Intentelo de nuevo.\n"<<endl;
-        }
-
-    }while(numFigura == -1);
-
-    system("cls");
-
-    int indiceColor = 0;
-
-    bool flag;
-    do{
-        cout << "Digite el color de la figura. Recuerde que como maximo pueden ser 10 colores.\nCantidad de colores cargados actualmente: "<< coloresLista_getTamanio(lista) << endl;
-        cout << "Colores cargados hasta el momento: ";
-        coloresLista_mostrarTodosLosElementos(lista);
-        cout<<endl;
-        cout << "Color elegido: ";
-        getline(cin,c);
-
-        int indiceColor = coloresLista_indiceDelColor(lista, c);
-        flag = false;
-        if( coloresLista_getTamanio(lista) == 10 && indiceColor == 0 ){
-            cout << "\nSupero el limite de colores. Intente eligiendo uno de los colores disponibles.\n" << endl;
-            flag = true;
-        }
-
-
-    }while(flag);
-
-    system("cls");
-
-    switch(numFigura){
-
-        case circulo:
-            cout << "Ingrese el radio del circulo: ";
-            getline(cin,control);
-            uno = atof(control.c_str());
-            break;
-        case cubo:
-            cout << "Ingrese la longitud del lado del cubo: ";
-            getline(cin,control);
-            uno = atof(control.c_str());
-            break;
-        case cilindro:
-            cout << "Ingrese el radio de la base del cilindro: ";
-            getline(cin,control);
-            uno = atof(control.c_str());
-
-            cout << "Ingrese la altura del cilindro: ";
-            getline(cin,control);
-            dos = atof(control.c_str());
-            break;
-        case triangulo:
-            cout << "Ingrese el cateto mayor del triangulo: ";
-            getline(cin,control);
-            uno = atof(control.c_str());
-
-            cout << "Ingrese el cateto menor del triangulo: ";
-            getline(cin,control);
-            dos = atof(control.c_str());
-            break;
-        case rectangulo:
-            cout << "Ingrese la base del rectangulo: ";
-            getline(cin,control);
-            uno = atof(control.c_str());
-
-            cout << "Ingrese la altura del rectangulo: ";
-            getline(cin,control);
-            dos = atof(control.c_str());
-            break;
-    }
-
-    guardarFiguraArchivo(nombreArchivo,t,c,uno,dos);
-
-    return crearFigura(t,c,uno,dos);
-}
 
 Figura crearFigura(string t,string c,float v1,float v2)
 {
@@ -170,28 +83,6 @@ int obtenerNumeroFigura(string tipo)
     }
     return -1;
 }
-
-int guardarFiguraArchivo(string nombreArchivo,string tipo,string color,float valorUno,float valorDos){
-
-    ofstream archivo;
-    archivo.open(nombreArchivo.c_str(), ios::out | ios::app);
-
-        if(archivo.fail()){
-        return archivoInexistente;
-        }
-
-        if(valorDos==0){
-            archivo<<tipo<<" "<<color<<" "<<valorUno<<endl;
-        }
-        else{
-            archivo<<tipo<<" "<<color<<" "<<valorUno<<";"<<valorDos<<endl;
-        }
-
-    archivo.close();
-    return figuraGuardada;
-
-}
-
 
 string getTipo(Figura &x)
 {

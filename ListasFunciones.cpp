@@ -241,7 +241,7 @@ int mostrarListaOrdenadaPorArea(ListaFigura listaFigura){
     if(listaFigura==NULL) return errorEliminado;
     else if(listaFigura->inicio==NULL) return errorVacio;
     float sumaTotal=0.0;
-
+    cout << "\n----------------------------------------------------------\n"<<endl;
     Nodo*actual=listaFigura->inicio;
     while(actual!=NULL){
         mostrarFigura(actual->figura);
@@ -251,21 +251,8 @@ int mostrarListaOrdenadaPorArea(ListaFigura listaFigura){
 
     cout << "Total de plastico gastado : | "<< sumaTotal << " |"<<endl;
     cout << endl;
-
+    cout << "----------------------------------------------------------\n"<<endl;
     return bien;
 }
 
-int agregarNuevaFigura(ListaFigura &listaFigura,ListaFigura &listaOrdenadaPorFigura,ListaFigura &listaOrdenadaPorIngreso,ListaFigura &listaOrdenadaPorFiguraColor,ListaColores &colores,string nombreArchivo){
 
-            Figura figura = crearFiguraPorTeclado(nombreArchivo,colores);
-            figura->orden=getTam(listaFigura);
-            //INSERTAR EN LA LISTA
-            coloresLista_agregarAlInicioSinRepetir(colores, getColor(figura));
-            insertarPorArea(listaFigura, figura);
-            insertarAlFinal(listaOrdenadaPorIngreso,figura);
-            insertarPorFiguraColor(listaOrdenadaPorFiguraColor, figura);
-            insertarPorFigura(listaOrdenadaPorFigura, figura);
-            cout << "\n\tFIGURA AGREGADA CORRECTAMENTE\n"<<endl;
-
-return bien;
-}

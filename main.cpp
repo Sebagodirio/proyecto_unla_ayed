@@ -45,7 +45,7 @@ int main()
     int cantFiguras=cantidadDeFiguras(listaOrdenadaPorArea);
 
 
-    while(opcion!=6)
+    while(opcion!=5)
     {
         system("pause");
         system("cls");
@@ -66,9 +66,7 @@ int main()
                 break;
         case 4: mostrarOrdenDeIngresoPorColor(listaOrdenadaPorIngreso,colores);
                 break;
-        case 5: agregarNuevaFigura(listaOrdenadaPorArea,listaOrdenadaPorFigura,listaOrdenadaPorIngreso,listaOrdenadaPorFiguraColor,colores,nombreArchivo);
-                break;
-        case 6: cout << "\n\tGracias por utilizar nuestro programa.\n"<<endl;
+        case 5: cout << "\n\tGracias por utilizar nuestro programa.\n"<<endl;
                 break;
         default:cout << "Ingreso una opcion incorrecta. Vuelva a intentarlo: "<<endl;
         }
@@ -93,8 +91,7 @@ int menu()
     cout << "[2] Mostrar el total de plastico utilizado por figura."<<endl;
     cout << "[3] Mostrar el total de plastico utilizado por figura-color."<<endl;
     cout << "[4] Mostrar el orden de ingreso de las figuras por color."<<endl;
-    cout << "[5] Agregar una nueva figura."<<endl;
-    cout << "[6] Salir del programa."<<endl;
+    cout << "[5] Salir del programa."<<endl;
     cout << endl;
     cout << "----------------------------------------------------------------------------------"<<endl;
     cout << "Opcion: ";

@@ -53,8 +53,6 @@ int archivoExiste(string nombreArchivo);
 int mostrarListaOrdenadaPorArea(ListaFigura listaFigura);
 //POST-CONDICIONES: SE MUESTRA LA LISTA Y FINALMENTE SE MUESTRA LA SUMA DE TODAS LAS AREAS
 
-//PRE-CONDICIONES: TODAS LAS LISTAS DEBEN ESTAR CREADAS. MANDAR UN NOMBRE DE ARCHIVO EXISTENTE.
-int agregarNuevaFigura(ListaFigura &listaFigura,ListaFigura &listaOrdenadaPorFigura,ListaFigura &listaOrdenadaPorIngreso,ListaFigura &listaOrdenadaPorFiguraColor,ListaColores &colores,string nombreArchivo);
-//POST-CONDICIONES: SE INSERTA LA NUEVA FIGURA EN TODAS LAS LISTAS DEL PROGRAMA.
+
 
 #endif // LISTASFUNCIONES_H_INCLUDED
