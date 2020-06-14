@@ -241,7 +241,7 @@ int mostrarListaOrdenadaPorArea(ListaFigura listaFigura){
     if(listaFigura==NULL) return errorEliminado;
     else if(listaFigura->inicio==NULL) return errorVacio;
     float sumaTotal=0.0;
-
+    cout << "\n----------------------------------------------------------\n"<<endl;
     Nodo*actual=listaFigura->inicio;
     while(actual!=NULL){
         mostrarFigura(actual->figura);
@@ -251,7 +251,7 @@ int mostrarListaOrdenadaPorArea(ListaFigura listaFigura){
 
     cout << "Total de plastico gastado : | "<< sumaTotal << " |"<<endl;
     cout << endl;
-
+    cout << "----------------------------------------------------------\n"<<endl;
     return bien;
 }
 

@@ -6,8 +6,6 @@
 
 using namespace std;
 
-
-
 Figura crearFigura(string t,string c,float v1,float v2)
 {
     Figura x=new struct EstructuraFigura();
@@ -24,23 +22,23 @@ float calcularArea(string tipo,float v1,float v2)
     int numero=obtenerNumeroFigura(tipo);
     switch(numero)
     {
-    case circulo:
-        area=PI*pow(v1,2);
-        break;
-    case cilindro:
-        area=2*PI*v1*v2 + 2*PI*pow(v1,2);
-        break;
-    case cubo:
-        area=6*pow(v1,2);
-        break;
-    case triangulo:
-        area=(v1*v2)/2;
-        break;
-    case rectangulo:
-        area=(v1*v2);
-        break;
-    default:
-        break;
+        case circulo:
+            area=PI*pow(v1,2);
+            break;
+        case cilindro:
+            area=2*PI*v1*v2 + 2*PI*pow(v1,2);
+            break;
+        case cubo:
+            area=6*pow(v1,2);
+            break;
+        case triangulo:
+            area=(v1*v2)/2;
+            break;
+        case rectangulo:
+            area=(v1*v2);
+            break;
+        default:
+            break;
     }
 
     return area;
@@ -83,28 +81,6 @@ int obtenerNumeroFigura(string tipo)
     }
     return -1;
 }
-
-int guardarFiguraArchivo(string nombreArchivo,string tipo,string color,float valorUno,float valorDos){
-
-    ofstream archivo;
-    archivo.open(nombreArchivo.c_str(), ios::out | ios::app);
-
-        if(archivo.fail()){
-        return archivoInexistente;
-        }
-
-        if(valorDos==0){
-            archivo<<tipo<<" "<<color<<" "<<valorUno<<endl;
-        }
-        else{
-            archivo<<tipo<<" "<<color<<" "<<valorUno<<";"<<valorDos<<endl;
-        }
-
-    archivo.close();
-    return figuraGuardada;
-
-}
-
 
 string getTipo(Figura &x)
 {
